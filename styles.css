@@ -1,0 +1,161 @@
+/* =========全体設定======== */
+body {
+  font-family: "Yu Gothic Medium",sans-serif;
+  margin: 0;
+  color: #333;
+  background-color: #faf7f2;
+}
+
+.section {
+  padding: 48px 16px;
+  max-width: 900px;
+  margin: 0 auto;
+  /* scroll-margin: 40px 0 0; */
+}
+
+.section h2 {
+  border-bottom: 2px solid #c7b8a3;
+  display: inline-block;
+  padding: 0 0 4px;
+  margin: 0 0 20px;
+}
+
+/* ========ヘッダー部分=========== */
+header {
+  background-color: #5c4a3d;
+  color: #fff;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* ===========ヒーロー(メイン画像)=============== */
+.hero {
+  height: 60vh;
+  min-height: 350px;
+  background:
+  
+  linear-gradient( rgba(0,0,0,0.3),
+  rgba(0,0,0,0.3) ),
+  url("./images/hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* padding: 0.20px; */
+
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 35px;
+  letter-spacing: 0.1em;
+}
+
+
+
+/* ====================About部分==========================-- */
+#about p {
+  font-size: 25px;
+  line-height: 1.8;
+}
+
+
+/* ===============メニュー（文字のみ）====================- */
+.menu-list {
+  list-style: none;
+  padding: 0;
+  font-size: 24px;
+  line-height: 1.8;
+}
+
+/* ====================ギャラリー部分========================= */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 16px;
+
+}
+
+.gallery-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  /* border-radius: 8px; */
+  box-shadow: 0 2px 6px;
+  rgba(0,0,0,0.2);
+}
+
+
+/* ===================フッター部分======================== */
+footer {
+  text-align: center;
+  background-color: #5c4a3d;
+  color: #fff;
+  padding: 20px 0 180px;
+}
+
+
+/* ===================スマホ用(768px以下)======================== */
+@media (max-width: 768px) {
+
+  /* ヒーロー */
+  .hero{
+    height: 45vh;
+    min-height: 250px;
+    background-position: center;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  /* ギャラリ→1列 */
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* ナビを縦並びに */
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    padding: 12px 0;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin: 0 0 8px;
+  }
+}
+
