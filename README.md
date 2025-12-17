@@ -1,4 +1,7 @@
-# Cafe Lian
+# Cafe Lian (架空カフェサイト)
+
+## URL
+https://r-suzuki0209.github.io/cafe-lian/
 
 HTML / CSSで作成したカフェのWebサイトです。
 
