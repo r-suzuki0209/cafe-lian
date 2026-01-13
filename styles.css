@@ -10,7 +10,8 @@ body {
   padding: 48px 16px;
   max-width: 900px;
   margin: 0 auto;
-  /* scroll-margin: 40px 0 0; */
+
+  scroll-margin: 40px 0 0;
 }
 
 .section h2 {
@@ -18,6 +19,10 @@ body {
   display: inline-block;
   padding: 0 0 4px;
   margin: 0 0 20px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* ========ヘッダー部分=========== */
@@ -35,7 +40,7 @@ header h1 {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: bold;
   color: #fff;
 }
@@ -112,6 +117,46 @@ nav a {
   rgba(0,0,0,0.2);
 }
 
+/* =====================staff section===================*/
+#staff .staff-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#staff .staff-photo img {
+  width: 280px;
+  height: auto;
+  border-radius: 8px;
+}
+
+#staff .staff-comment {
+  max-width: 420px;
+}
+
+#staff .staff-item {
+  max-width: 900px;
+  margin-top: 0 auto;
+}
+
+#staff .staff-comment P {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #333;
+}
+
+#staff .staff-comment h3 {
+  font-size: 20px;
+  margin: 0 0 12px;
+}
+
+#staff {
+  background-color: #efece6;
+}
+
+
 
 /* ===================フッター部分======================== */
 footer {
@@ -156,6 +201,44 @@ footer {
 
   .logo {
     margin: 0 0 8px;
+  }
+
+  #staff .staff-item {
+    display: grid;
+    flex-direction: column; 1fr;
+    row-gap: 10px
+    margin: 0 0 30px;;
+    align-items: flex-start;
+  }
+
+  #staff .staff-comment h3 {
+    order: 0;
+    margin: 0;
+
+  }
+
+  #staff .staff-photo {
+    order: 1;
+  }
+
+  #staff .staff-comment p {
+    order: 2;
+    margin: 0;
+  }
+
+  #staff .staff-comment {
+    display: contents;
+  }
+
+  #staff .staff-comment p {
+    font-size: 17px;
+    line-height: 2;
+    padding: 10px 0;
+  }
+  #staff .staff-item {
+    margin: 0 0 40px;
+    padding: 0 0 40px;
+    border-bottom: 1px solid #c7b8a3;
   }
 }
 
